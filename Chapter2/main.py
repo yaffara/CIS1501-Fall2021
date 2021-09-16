@@ -50,3 +50,42 @@ print('67 as a character', chr(67))
 
 print('Tab: \t - newline: \n - single quote \'')
 print(r'Tab: \t - newline: \n - single quote \'')
+
+
+
+your_number = int(input("enter a number 1-100: "))
+result = your_number * 9
+hundreds_place = result // 100
+tens_place = result % 100 // 10
+ones_place = result % 10
+
+print("your number * 9 is: ", result)
+print("the sum of the digits in that is: ", hundreds_place + tens_place + ones_place )
+
+
+sum = 0
+
+#sum = sum +
+sum += int(input("enter a number: "))
+sum += int(input("enter a number: "))
+sum += int(input("enter a number: "))
+sum += int(input("enter a number: "))
+sum += int(input("enter a number: "))
+
+print("Total total is: ", sum)
+print("The average is: ", sum/5)
+
+
+first_initial = ord(input("Please enter your first initial"))
+middle_initial = ord(input("Please enter your middle initial"))
+last_initial = ord(input("Please enter your last initial"))
+
+number_of_letters_to_shift_by = int(input("How many letters should we shift by? "))
+
+print(chr(first_initial), chr(middle_initial), chr(last_initial))
+
+first_initial += number_of_letters_to_shift_by
+middle_initial += number_of_letters_to_shift_by
+last_initial += number_of_letters_to_shift_by
+
+print(chr(first_initial), chr(middle_initial), chr(last_initial))
